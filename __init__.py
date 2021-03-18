@@ -1,1 +1,1 @@
-from feature_extraction import extract
+from .feature_extraction import extract
