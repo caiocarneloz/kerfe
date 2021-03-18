@@ -4,7 +4,7 @@ from feature_extraction import extract
 from keras.applications.vgg16 import VGG16 as vgg
 from keras.applications.vgg16 import preprocess_input as vgg_p
 
-def getImages(paths):
+def main():
     
     path = 'images/'
     images = ['caglaroskay.jpg', 'davidbraud.jpg', 'jessicaknowlden.jpg']
@@ -16,3 +16,7 @@ def getImages(paths):
     df_features = extract(vgg, vgg_p, image_list, (300, 500, 3))
     
     print(df_features)
+    
+    
+if __name__ == "__main__":
+    main()

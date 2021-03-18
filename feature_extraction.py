@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-from keras.preprocessing import image
 from keras.models import Model
+from keras.preprocessing import image
 from keras.layers import Flatten, Input
 
 def extract(keras_model, keras_preprocess, image_list, shape, summary = False):
