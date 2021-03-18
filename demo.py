@@ -14,3 +14,5 @@ def getImages(paths):
         image_list.append(image.load_img(path+img, target_size=(300, 500)))
         
     df_features = extract(vgg, vgg_p, image_list, (300, 500, 3))
+    
+    print(df_features)

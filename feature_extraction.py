@@ -4,11 +4,12 @@ from keras.preprocessing import image
 from keras.models import Model
 from keras.layers import Flatten, Input
 
-def extract(keras_model, keras_preprocess, image_list, shape):
+def extract(keras_model, keras_preprocess, image_list, shape, summary = False):
     
     model = keras_model(weights='imagenet', include_top = False)
     
-    model.summary()
+    if summary:
+        model.summary()
 
     images = []
     for img in image_list:
@@ -26,8 +27,6 @@ def extract(keras_model, keras_preprocess, image_list, shape):
     
     extractor = Model(inputs=input, outputs=x)
     features = extractor.predict(images)
-
-    print(features.shape)
 
     df = pd.DataFrame.from_records(features)
     df = df.loc[:, (df != 0).any(axis=0)]
