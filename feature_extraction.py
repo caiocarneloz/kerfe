@@ -4,7 +4,7 @@ from keras.preprocessing import image
 from keras.models import Model
 from keras.layers import Flatten, Input
 
-def extract(keras_model, keras_preprocess, image_list):
+def extract(keras_model, keras_preprocess, image_list, shape):
     
     model = keras_model(weights='imagenet', include_top = False)
     
@@ -19,7 +19,7 @@ def extract(keras_model, keras_preprocess, image_list):
 
     images = np.vstack(images)
     
-    input = Input(shape=(256, 166, 3), name='input')
+    input = Input(shape=shape, name='input')
     
     output = model(input)
     x = Flatten(name='flatten')(output)
