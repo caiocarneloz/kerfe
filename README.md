@@ -1,9 +1,9 @@
-# kerfe
+# kerfex
 Generic feature extraction using [keras pre-built CNN's](https://keras.io/api/applications/) with imagenet weights.
 
 ## Getting Started
 #### Dependencies
-You need Python 3.7 or later to run **kerfe**. You can find it at [python.org](https://www.python.org/).
+You need Python 3.7 or later to run **kerfex**. You can find it at [python.org](https://www.python.org/).
 
 You aso need pandas, numpy, keras and tensorflow packages, which is available from [PyPI](https://pypi.org). If you have PyPI, run:
 ```
@@ -12,10 +12,10 @@ pip install pandas numpy keras tensorflow
 #### Installation
 Clone this repo to your local machine using:
 ```
-git clone https://github.com/caiocarneloz/kerfe.git
+git clone https://github.com/caiocarneloz/kerfex.git
 ```
 ### Usage
-The [demo.py](https://github.com/caiocarneloz/kerfe/blob/main/demo.py) file shows a simple example using VGG16 with three [Unsplash](https://unsplash.com/) images from the authors [@mybibimbaplife](https://unsplash.com/@mybibimbaplife), [@davidbraud](https://unsplash.com/@davidbraud), and [@analoglugunler](https://unsplash.com/@analoglugunler). The "extract" function requires:
+The [demo.py](https://github.com/caiocarneloz/kerfex/blob/main/demo.py) file shows a simple example using VGG16 with three [Unsplash](https://unsplash.com/) images from the authors [@mybibimbaplife](https://unsplash.com/@mybibimbaplife), [@davidbraud](https://unsplash.com/@davidbraud), and [@analoglugunler](https://unsplash.com/@analoglugunler). The "extract" function requires:
 
 - **CNN instance itself**
 - **CNN pre-processing module**
