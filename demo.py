@@ -1,4 +1,4 @@
-import kerfe as krf
+import kerfex as krf
 import pandas as pd
 from keras.preprocessing import image
 from keras.applications.vgg16 import VGG16 as vgg
