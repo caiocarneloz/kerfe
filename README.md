@@ -14,6 +14,10 @@ Clone this repo to your local machine using:
 ```
 git clone https://github.com/caiocarneloz/kerfex.git
 ```
+Or install it using pip:
+```
+pip install kerfex
+```
 ### Usage
 The [demo.py](https://github.com/caiocarneloz/kerfex/blob/main/demo.py) file shows a simple example using VGG16 with three [Unsplash](https://unsplash.com/) images from the authors [@mybibimbaplife](https://unsplash.com/@mybibimbaplife), [@davidbraud](https://unsplash.com/@davidbraud), and [@analoglugunler](https://unsplash.com/@analoglugunler). The "extract" function requires:
 
