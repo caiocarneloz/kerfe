@@ -7,7 +7,7 @@ You need Python 3.7 or later to run **kerfex**. You can find it at [python.org](
 
 You aso need pandas, numpy, keras and tensorflow packages, which is available from [PyPI](https://pypi.org). If you have PyPI, run:
 ```
-pip install pandas numpy keras tensorflow
+pip install pandas numpy keras tf-nightly
 ```
 #### Installation
 Clone this repo to your local machine using:
